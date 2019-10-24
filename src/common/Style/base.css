@@ -1,29 +1,33 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css');
+
+*{
     box-sizing: border-box;
 }
-
 html {
     overflow-x: hidden;
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+#grid{
     display: grid;
     grid-template-areas:
         "header header header header header"
-        "slider slider slider slider slider"
+        "carousel carousel carousel carousel carousel"
         ". main main sidebar ."
         "footer footer footer footer footer";
-    grid-template-rows: 60px 55vh 1fr 200px;
-    grid-template-columns:   1fr repeat(3, 400px) 1fr;
-    width: 100%;
+    grid-template-rows: 60px 300px 1fr 200px;
+    grid-template-columns: 1fr repeat(3, 400px) 1fr;
 }
 #header {
     grid-area: header;
     background-color: white;
 }
-#slider-wrapper{
-    grid-area: slider;
-    margin-left: -1px;
+.carousel{
+    grid-area: carousel;
+    position: relative;
 }
 #main {
     grid-area: main;
