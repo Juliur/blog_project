@@ -18,22 +18,11 @@
     width: 100%;
     object-fit: cover;
 }
-.category{
-    width: 90px;
-    height: 35px;
+.slide-category{
     position: absolute;
-    bottom: 25%;
-    color: white;
-    font-weight: 700;
-    border-radius: 3px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FF4040;
-    z-index: 2;
 }
 .slider-title-wrapper{
     position: absolute;
@@ -43,6 +32,9 @@
     align-items: center;
     justify-content: center;
     width: 100%; 
+}
+.slider-title-wrapper a{
+    text-decoration: none;
 }
 .slider-title{
     color: white;
