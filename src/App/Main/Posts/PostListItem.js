@@ -15,7 +15,7 @@ const PostListItem = ({
                 <img className="post-img" src={image} alt=""/>
             </div>
             <div className="post-body">
-                <button className="category post-category">{category}</button>
+                {/* <button className="category post-category">{category}</button> */}
                 <h3 className="post-title">{title}</h3>
                 <div className="info">
                     <p className="author"><i className="fa fa-pencil" aria-hidden="true"></i>By {author}</p>

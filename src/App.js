@@ -5,12 +5,13 @@ import './common/Style/base.css'
 
 import Header from './App/Header/Header'
 import Main from './App/Main/Main'
-import Carousel from './App/Carousel/Carousel'
+import Preview from './App/Preview/Preview'
+
 function App() {
   return (
     <div id="grid">
       <Header/>
-      <Carousel/>
+      <Preview/>
       <Main/>
      </div>
   )

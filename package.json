@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.27",
     "core-js": "^3.3.3",
     "jquery": "^3.4.1",
     "prop-types": "^15.7.2",

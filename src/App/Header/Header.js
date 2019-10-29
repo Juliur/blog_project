@@ -9,7 +9,7 @@ const Header = () =>{
         <header id="header">
             <div className="container">
                 <nav>
-                    <a href="#" className="logo">News</a>
+                    <a href="#" className="logo">Blog</a>
                     <input type="checkbox" id="nav-toggle"/>
                     <label htmlFor="nav-toggle" className="burger-menu">
                         <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
