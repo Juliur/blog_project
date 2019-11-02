@@ -1,0 +1,75 @@
+.popular-posts{
+    background-color: #F8F8F8;
+}
+.popular-post-wrapper:hover h5{
+    color: #FF4040;
+}
+.appearing-link{
+    font-size: 15px;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 500;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+	color: #fff;
+    overflow: hidden;
+    width:100%;
+}
+.appearing-link:before {
+    font-family: "ForkAwesome";
+    content: "\f178";
+    color: #FF4040;
+	left: 70%;
+	opacity: 0;
+	bottom: 0;
+	position: absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.popular-post-wrapper:hover .appearing-link:before {
+	left: 90%;
+	opacity: 1;
+}
+.state-link{
+    display: none;
+}
+.popular-post{
+    display: grid;
+    grid-template-areas: 
+    "img title";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 85px;
+    margin: 15px 10px 15px 0;
+    color: #404250;
+    font-weight: 500;
+}
+.popular-posts-header{
+    display: block;
+    height: 35px;
+    text-transform: uppercase;
+    color: #FF4040;
+    font-weight: 700;
+    border-bottom: 2px solid #FF4040;
+}
+.popular-post-img{
+    grid-area: img;
+}
+.popular-post-body{
+    grid-area: title;
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0 10px;
+}
+.popular-post-body h5{
+   font-weight: 700;
+}
+.popular-post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
