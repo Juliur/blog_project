@@ -24,5 +24,20 @@ const popularPosts = [
         title: "These are the world’s best stargazing spots",
         image: "images/stars.jpg",
     },
+    {
+        id:5,
+        title: "These are the world’s best stargazing spots",
+        image: "images/stars.jpg",
+    },
+    {
+        id:5,
+        title: "These are the world’s best stargazing spots",
+        image: "images/stars.jpg",
+    },
+    {
+        id:5,
+        title: "These are the world’s best stargazing spots",
+        image: "images/stars.jpg",
+    },
 ]
 export default popularPosts

@@ -16,18 +16,18 @@ body {
     display: grid;
     grid-template-areas:
         "header header header header header"
-        "preview preview preview preview preview"
+        "carousel carousel carousel carousel carousel"
         ". main main sidebar ."
         "footer footer footer footer footer";
-    grid-template-rows: 50px 400px 1fr 200px;
-    grid-template-columns: 1fr repeat(3, 400px) 1fr;
+    grid-template-rows: 50px 350px 1fr 200px;
+    grid-template-columns: 1fr repeat(3, minmax(0,400px)) 1fr;
 }
 #header {
     grid-area: header;
     background-color: white;
 }
-#preview{
-    grid-area: preview;
+#carousel{
+    grid-area: carousel;
 }
 #main {
     grid-area: main;
@@ -56,8 +56,6 @@ body {
 }
 #social{
     grid-area: social;
-    display: grid;
-    justify-items: center;
 }
 #contacts{
     grid-area: contacts;  

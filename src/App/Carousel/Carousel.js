@@ -1,44 +1,48 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Slider from "react-slick";
+import CarouselPostItem from './CarouselPostItem'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
-import SpaceX from './images/spacex.jpg';
+import posts from '../Main/Posts/posts';
 
-class Carousel extends React.Component {
+
+class Carousel extends Component {
     render() {
       var settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
-      return (
+    return (
+        <div id="carousel">
             <Slider {...settings}>
-                <div className="slider-item">
-                    <div className="category">
-                        <p>Science</p>
-                    </div>
-                    <div className="slider-title-wrapper">
-                        <h2 className="slider-title">SpaceX has unveiled the rocket it hopes will one day carry humans to Mars
-                        </h2>
-                    </div>
-                    <img className="slider-img" src={SpaceX}/>
-                </div>
-                <div>
-                    <h3>2</h3>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-            </Slider>  
-        );
+                { 
+                    posts.sort((a,b)=>{
+                        let dateA = new Date (a.date),
+                            dateB = new Date (b.date)
+                            return dateA - dateB      
+                    })
+                    .slice(0,5)
+                    .map(({
+                        id,
+                        title,
+                        image,
+                        category,
+                        date
+                    })=> <CarouselPostItem
+                            key={id}
+                            title={title}
+                            category={category}
+                            image={image}
+                            date={date}
+                        />
+                    )
+                }
+            </Slider>
+        </div>      
+        )
     }
   }
 

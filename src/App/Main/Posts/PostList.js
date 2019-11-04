@@ -6,26 +6,26 @@ const PostList = () =>{
     return(
         <div>
             {
-						posts.map(({
-							id,
-							image,
-							category,
-							text,
-							title,
-							author,
-							date,
-						})=> (
-							<div key={id}>
-									<PostListItem
-									image={image}
-									category={category}
-									title={title}
-									text={text}
-									author={author}
-									date={date}
-									/>
-							</div>
-						))
+				posts.map(({
+					id,
+					image,
+					category,
+					text,
+					title,
+					author,
+					date,
+				})=> (
+					<div key={id}>
+						<PostListItem
+						image={image}
+						category={category}
+						title={title}
+						text={text}
+						author={author}
+						date={date}
+						/>
+					</div>
+				))
             }
        </div>
     )

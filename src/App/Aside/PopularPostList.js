@@ -1,21 +1,23 @@
 import React from 'react';
-import popularPosts from './popularPosts';
+import posts from '../Main/Posts/posts';
 import PopularPostItem from './PopularPostItem';
 
 const PopularPostLIst = () =>{
     return(
         <div>
             {
-                popularPosts.map(({
+                posts.filter(post => post.views >=30).map(({
                     id,
                     image,
-                    title
-                })=> <div key={id}>
-                      <PopularPostItem 
+                    title,
+                    views,
+                })=> <PopularPostItem 
+                      key={id}
                       image={image}
                       title={title}
+                      views={views}
                     />
-                </div>)
+               )
             }    
         </div>
     )

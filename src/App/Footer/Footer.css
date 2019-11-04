@@ -1,0 +1,56 @@
+.newsletter-wrapper, .social-wrapper, .contacts-wrapper{
+    display: grid;
+    justify-content: center;
+    height: 100%;
+}
+.newsletter-wrapper, .social-wrapper, .contacts-wrapper h2{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.newsletter-wrapper{
+    grid-template-rows: 40px auto auto;
+}
+.newsletter-wrapper input,
+.newsletter-wrapper button {
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+}
+.newsletter-wrapper button{
+    border: 2px solid #FF4040;
+    background-color: #FF4040;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+    padding: 0;
+    transition: all 0.1s linear 0s;
+}
+.newsletter-wrapper button:hover{
+    background-color: transparent;
+    color: #FF4040;
+    transition: all 0.1s linear 0s;
+}
+.newsletter-wrapper input{
+    padding: 5px;
+}
+.social-wrapper{
+    grid-template-rows: 40px 1fr; 
+}
+.social-wrapper a{
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+} 
+.contacts-wrapper{
+    grid-template-rows: 40px 30px 30px;
+}
+.contacts-wrapper p{
+    color: white;
+    font-size: 15px;
+}
+.contacts-wrapper i{
+    margin-right: 10px;
+}

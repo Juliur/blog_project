@@ -13,11 +13,18 @@
 .post-img{
     width: 100%;
     object-fit: cover; 
+    max-height: 440px;
 }
-.post-body p{
-   font-size: 1rem;
+.text-content{
+    margin: 10px 20px;
+    font-size: 1.1rem;
+    color: #404250;
+    text-align: center;
+    line-height: 25px;
+}
+.post-body .author, .publication-date{
+   font-size: .9rem;
    text-align: center;
-   margin: 10px 20px;
    line-height: 25px;
    color: #404250;
    font-weight: 500;
@@ -35,10 +42,17 @@
     font-weight: 700;
     border-radius: 3px;
     display: grid;
+    border: 2px solid #FF4040;
     align-items: center;
     justify-content: center;
     background-color: #FF4040;
     z-index: 2;
+    transition: all 0.1s linear 0s;
+}
+.post-category:hover{
+    background-color: transparent;
+    color: #FF4040;
+    transition: all 0.1s linear 0s;
 }
 .info{
     text-align: center;
