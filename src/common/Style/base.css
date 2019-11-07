@@ -43,8 +43,8 @@ body {
     grid-area: footer;
     display: grid;
     grid-template-areas: 
-    "logo newsletter social contacts";
-    grid-template-columns: 19% repeat(3, 27%);
+    "newsletter social contacts";
+    grid-template-columns: repeat(3, 33.3%);
     background-color: #404250;
     padding: 30px;
 }

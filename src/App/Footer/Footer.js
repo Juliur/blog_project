@@ -4,9 +4,6 @@ import './Footer.css';
 const Footer = () =>{
     return(
         <footer id="footer">
-            <div id="logo">
-                <a href="#" className="logo">Blog</a>
-            </div>
             <div id="newsletter">
                 <div className="newsletter-wrapper">
                     <h2>Subscribe to our newsletter</h2>

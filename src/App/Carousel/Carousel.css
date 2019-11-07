@@ -1,29 +1,4 @@
-#slider{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    column-gap: 15px;
-    grid-template-areas: 
-    "small1 big small3"
-    "small2 big small4";
-}
-.small1{
-    grid-area: small1;
-    margin-bottom: 15px;
-}
-.small2{
-    grid-area: small2;
-}
-.small3{
-    grid-area: small3;
-    margin-bottom: 15px;
-}
-.small4{
-    grid-area: small4;
-}
-.big{
-    grid-area: big;
-}
+
 .slider-img{
     width: 100%;
     height: 100%;
@@ -47,10 +22,14 @@
     height: 100%;
     object-fit: cover;
 }
-.slide-category{
+.category-title{
     position: absolute;
+    top: 60%;
+    z-index: 3;
+}
+.slide-category{
     width: 90px;
-    height: 30px;
+    height: 35px;
     color: white;
     font-weight: 700;
     border-radius: 3px;
@@ -60,12 +39,10 @@
     background-color: #FF4040;
     z-index: 2;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 .slider-title-wrapper{
-    position: absolute;
     padding: 5px 10px;
-    bottom: 5%;
-    z-index: 3;
     width: 100%; 
 }
 .slider-title{
@@ -79,4 +56,38 @@
 }
 .slick-slide>div{
     height: 100%;
+}
+.slick-prev, .slick-next{
+    position: absolute;  
+    top: 50%;        
+    width: 60px;
+    height: 100%;
+    outline: none;
+    opacity: .5;
+    background-color: transparent;
+    z-index: 2;
+}
+.slick-prev:hover, .slick-next:hover{
+    opacity: .9;
+}
+.slick-prev{             
+    left: 0;      
+    transform: translate(0, -50%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+}
+.slick-next::before, .slick-prev::before{
+    font-family: "ForkAwesome" !important;
+    color: white;
+    font-size: 40px;
+}
+.slick-prev::before{
+    content: "\f104";
+}
+.slick-next{
+    right: 0;      
+    transform: translate(0, -50%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);
+}
+.slick-next::before{
+    content: "\f105"; 
 }

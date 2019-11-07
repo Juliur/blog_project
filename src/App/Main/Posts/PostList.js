@@ -6,7 +6,7 @@ const PostList = () =>{
     return(
         <div>
             {
-				posts.map(({
+				posts.slice(6, posts.length).map(({
 					id,
 					image,
 					category,
