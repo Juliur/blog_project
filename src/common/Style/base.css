@@ -25,6 +25,7 @@ body {
 #header {
     grid-area: header;
     background-color: white;
+    z-index: 5;
 }
 #carousel{
     grid-area: carousel;

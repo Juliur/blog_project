@@ -1,0 +1,188 @@
+@media (min-width: 1500px){
+    body {
+        grid-template-columns:  1fr repeat(3, 500px) 1fr;
+    }
+    .container{
+        width: 1500px;
+        position: relative;
+    }
+    .popular-post{
+        grid-template-rows: 150px;
+    }
+} 
+@media (max-width: 1200px){
+    .container{
+        width: 80%;
+        position: relative;
+    }
+}
+@media (max-width: 992px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "slider slider"
+            "main sidebar"
+            "footer footer";
+        grid-template-rows: 60px 300px auto auto auto;
+        grid-template-columns: 60% 40%; 
+        height: 100%;
+        width: 100%;
+        }
+    .container{
+        width: 100%;
+        position: relative;
+    }    
+    nav .burger-menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        color: #404250;
+        position: absolute;
+        top: 50%;                         
+        transform: translate(0, -50%);
+        right: 15px;
+    }
+    nav .logo{
+        margin-left: 15px;
+    }
+    nav .main-menu {
+        display: none;
+    }
+    nav .link-effect::after{
+        display: none; 
+    }
+    nav .main-menu a:active,
+    nav .main-menu a:focus{
+        background-color: rgb(211, 211, 211);
+    }
+    nav #nav-toggle{
+        display: none;
+    }
+    #nav-toggle:checked ~.main-menu {
+        display: grid;
+        z-index: 5;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 100%;
+        width: 50%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    nav .main-menu a{
+        padding: 15px;
+        background-color: #F8F8F8;
+    }
+    .popular-post{
+        grid-template-rows: 100px;
+    }
+    #footer {
+        grid-template-areas:
+        "logo social"
+        "newsletter contacts";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+    }
+    .newsletter-wrapper, .social-wrapper, .contacts-wrapper{
+        justify-content: start;
+    }
+    .newsletter-wrapper input, button{
+        margin-bottom: 15px;
+    }
+    #footer>.logo{
+        margin-left: 0;
+    }
+    #social{
+        justify-content: start;
+    }
+} 
+@media (max-width: 768px) { 
+    body {
+    grid-template-areas:
+        "header"
+        "carousel"
+        "main"
+        "sidebar"
+        "footer";
+    grid-template-rows: 60px 320px auto auto auto;
+    grid-template-columns: 100%; 
+    height: 100%;
+    }
+    nav{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 60px;
+    }
+    #nav-toggle:checked ~.main-menu{
+        width: 100%;
+    }
+    .slider-title{
+        margin: 0 15px 15px 15px;
+    }
+    .container{
+    width: 100%;
+    position: relative;
+    }
+    #main{
+        padding: 15px;
+    }
+    .post{
+        margin-top: 0;
+        border-bottom: 0;
+    }
+    .post-body> p{
+        text-align: justify;
+        margin: 10px 0;
+    }
+    .post-footer{
+        padding: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    #sidebar{
+        padding-top: 0;
+    }
+    .popular-post{
+        margin: 15px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 120px;
+    }
+    .popular-posts-header{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .appearing-link{
+        display: none;
+    }
+    .state-link{
+        display: block;
+        text-decoration: none;
+        color: #FF4040;
+        text-align: end; 
+        align-self: end;
+    }
+    .newsletter-wrapper{
+        row-gap: 15px;
+    }
+    .newsletter-wrapper h2{
+        text-align: center;
+    }
+    #footer {
+        grid-template-areas:
+        "newsletter"
+        "social"
+        "contacts";
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 30px;
+    }
+    #footer .logo{
+        margin-left: 0;
+    }
+    .contacts-wrapper h2{
+        text-align: center;
+    }
+} 
+
+
