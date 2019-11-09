@@ -7,13 +7,12 @@ const RandomPost = () =>{
     return(
         <div className="random-post-wrap">
             {
-              posts.filter(post => post.id == randomId)
-										.map(({image,
-													title,
-													category,
-													author,
-													date,
-                    })=> <div className="post-item">
+              [posts[randomId]].map(({image,
+									title,
+									category,
+									author,
+									date,
+                    			})=> <div className="post-item">
 										<div className="post-header">
 												<img className="post-img" src={image} alt=""/>
 										</div>
@@ -21,8 +20,8 @@ const RandomPost = () =>{
 												<button className="category post-category">{category}</button>
 												<h3 className="post-title">{title}</h3>
 												<div className="info">
-														<p className="author"><i className="fa fa-pencil" aria-hidden="true"></i>By {author}</p>
-														<p className="publication-date"><i className="fa fa-calendar" aria-hidden="true"></i>{date}</p>
+													<p className="author"><i className="fa fa-pencil" aria-hidden="true"></i>By {author}</p>
+													<p className="publication-date"><i className="fa fa-calendar" aria-hidden="true"></i>{date}</p>
 												</div>
 										</div>
 										<div className="post-footer">

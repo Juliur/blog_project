@@ -16,11 +16,11 @@
         position: relative;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     #grid {
         grid-template-areas:
             "header header"
-            "slider slider"
+            "carousel carousel"
             "main sidebar"
             "footer footer";
         grid-template-rows: 60px 300px auto auto auto;
@@ -75,6 +75,9 @@
     nav .main-menu a{
         padding: 15px;
         background-color: #F8F8F8;
+    }
+    .slider-item .category-title{
+        top: 55%;
     }
     .popular-post{
         grid-template-rows: 100px;

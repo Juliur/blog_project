@@ -16,7 +16,7 @@ class Carousel extends Component {
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 992,
+              breakpoint: 991,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
