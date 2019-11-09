@@ -68,8 +68,22 @@
 .popular-post-body h5{
    font-weight: 700;
 }
+.views{
+    font-size: .8rem;
+    color: #404250;
+    opacity: .5;
+}
+.eye-symbol{
+    margin-right: 5px;
+}
 .popular-post-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.random-post-wrap .post-item{
+    margin-top: 15px;
+}
+.random-post-wrap .post-footer{
+    padding-top: 15px;
 }

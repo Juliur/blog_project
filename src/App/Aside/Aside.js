@@ -1,5 +1,6 @@
 import React from 'react';
 import PopularPostList from './PopularPostList';
+import RandomPost from './RandomPost';
 import './Aside.css';
 
 const Aside = () =>{
@@ -10,6 +11,10 @@ const Aside = () =>{
                     <h4>Popular posts</h4>
                 </div>
                 <PopularPostList/>
+                <div className="popular-posts-header">
+                    <h4>Random post</h4>
+                </div>
+                <RandomPost/>
             </div>
         </aside>    
     )

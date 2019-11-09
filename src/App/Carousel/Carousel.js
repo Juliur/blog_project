@@ -32,7 +32,7 @@ class Carousel extends Component {
               }
             },
             {
-              breakpoint: 320,
+              breakpoint: 575,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

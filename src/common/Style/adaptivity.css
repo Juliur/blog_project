@@ -1,5 +1,5 @@
 @media (min-width: 1500px){
-    body {
+    #grid {
         grid-template-columns:  1fr repeat(3, 500px) 1fr;
     }
     .container{
@@ -17,7 +17,7 @@
     }
 }
 @media (max-width: 992px) {
-    body {
+    #grid {
         grid-template-areas:
             "header header"
             "slider slider"
@@ -31,7 +31,10 @@
     .container{
         width: 100%;
         position: relative;
-    }    
+    }   
+    #header nav{
+        height: 60px;
+    } 
     nav .burger-menu {
         display: inline-block;
         position: absolute;
@@ -78,10 +81,9 @@
     }
     #footer {
         grid-template-areas:
-        "logo social"
-        "newsletter contacts";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        "social newsletter contacts";
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 100px;
     }
     .newsletter-wrapper, .social-wrapper, .contacts-wrapper{
@@ -98,7 +100,7 @@
     }
 } 
 @media (max-width: 768px) { 
-    body {
+    #grid {
     grid-template-areas:
         "header"
         "carousel"
@@ -118,6 +120,9 @@
     }
     .slider-title{
         margin: 0 15px 15px 15px;
+    }
+    .category-title>.slide-category{
+        margin-left: 25px;
     }
     .container{
     width: 100%;
@@ -142,24 +147,36 @@
     #sidebar{
         padding-top: 0;
     }
-    .popular-post{
+    #sidebar .popular-post{
         margin: 15px;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 120px;
     }
     .popular-posts-header{
         margin-left: 10px;
         margin-right: 10px;
     }
-    .appearing-link{
+    #sidebar .popular-post-body{
+        padding-right: 0;
+    }
+    .popular-post-body>h5{
+        font-size: 1.3rem;
+    }
+    .popular-post-body>.appearing-link{
         display: none;
     }
-    .state-link{
+    .popular-post .state-link{
         display: block;
         text-decoration: none;
         color: #FF4040;
         text-align: end; 
         align-self: end;
+    }
+    .popular-post .state-link>i{
+        margin-left: 5px;
+    }
+    .random-post-wrap{
+        padding: 0 15px;
     }
     .newsletter-wrapper{
         row-gap: 15px;

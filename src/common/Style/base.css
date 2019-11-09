@@ -26,6 +26,8 @@ body {
     grid-area: header;
     background-color: white;
     z-index: 5;
+    position: fixed;
+    width: 100%;
 }
 #carousel{
     grid-area: carousel;
