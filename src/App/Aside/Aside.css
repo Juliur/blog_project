@@ -83,7 +83,10 @@
 }
 .random-post-wrap .post-item{
     margin-top: 15px;
+    grid-template-rows: 200px auto auto;
+    border-bottom: 0;
 }
 .random-post-wrap .post-footer{
     padding-top: 15px;
+    text-align: center;
 }

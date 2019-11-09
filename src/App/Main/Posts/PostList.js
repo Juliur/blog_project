@@ -3,10 +3,11 @@ import PostListItem from './PostListItem';
 import posts from './posts';
 
 const PostList = () =>{
+	let visiblePosts = 5;
     return(
         <div>
             {
-				posts.slice(6, posts.length).map(({
+				posts.slice(0,visiblePosts).map(({
 					id,
 					image,
 					category,

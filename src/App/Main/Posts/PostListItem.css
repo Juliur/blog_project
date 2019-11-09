@@ -2,6 +2,8 @@
     background-color: #F8F8F8;
     border-bottom: 1px dashed #a0a0a0;
     margin-top: 30px;
+    display: grid;
+    grid-template-rows: 350px auto auto;
 }
 .post:last-child{
     border-bottom: 0;
@@ -12,8 +14,8 @@
 }
 .post-img{
     width: 100%;
+    height: 100%;
     object-fit: cover; 
-    max-height: 440px;
 }
 .text-content{
     margin: 10px 20px;
