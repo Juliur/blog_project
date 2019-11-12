@@ -12,7 +12,7 @@ const RandomPost = () =>{
 									category,
 									author,
 									date,
-                    			})=> <div className="post-item">
+                    			})=> <div className="post-item" key={randomId}>
 										<div className="post-header">
 												<img className="post-img" src={image} alt=""/>
 										</div>
