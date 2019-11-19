@@ -5,7 +5,7 @@ import posts from './posts';
 const PostList = () =>{
 	let visiblePosts = 5;
     return(
-        <div>
+        <div id="posts-area">
             {
 				posts.slice(0,visiblePosts).map(({
 					id,

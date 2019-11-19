@@ -1,22 +1,3 @@
-#category-page {
-    display: grid;
-    grid-template-areas:
-        "banner banner banner banner banner"
-        ". main main sidebar ."
-        "footer footer footer footer footer";
-    grid-template-rows: 55vh 1fr 200px;
-    grid-template-columns:   1fr repeat(3, 400px) 1fr;
-    width: 100%;
-}
-#banner{
-    grid-area: banner;
-}
-#main {
-    grid-area: main;
-    background-color: #F8F8F8;
-    padding-right: 15px;
-}
-
 .banner-wrap{
     position: relative;
     width: 100%;

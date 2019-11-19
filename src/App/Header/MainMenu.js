@@ -5,7 +5,7 @@ import './MainMenu.css'
 const MainMenu = () =>{
     return (
         <div className="main-menu">
-            <Link to= "/" className="nav-item current">Home</Link>
+            <Link to= "/" className="nav-item link-effect">Home</Link>
             <Link to= "/category-page" className="nav-item link-effect">Science</Link>
             <Link to= "/" className="nav-item link-effect">Tech</Link>
             <Link to= "/" className="nav-item link-effect">Travel</Link>
