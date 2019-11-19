@@ -1,5 +1,7 @@
 import React from 'react';
-import PostList from './Posts/PostList'
+
+import PostList from './Posts/PostList';
+import CategoryPostList from './CategoryPage/CategoryPostLIst';
 
 
 const Main = () =>{

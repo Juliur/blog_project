@@ -1,0 +1,53 @@
+#grid {
+    display: grid;
+    grid-template-areas:
+        "banner banner banner banner banner"
+        ". main main main ."
+        "footer footer footer footer footer";
+    grid-template-rows: 55vh 1fr 200px;
+    grid-template-columns:   1fr repeat(3, 400px) 1fr;
+    width: 100%;
+}
+#banner{
+    grid-area: banner;
+}
+#main {
+    grid-area: main;
+    background-color: #F8F8F8;
+    padding-right: 15px;
+}
+.banner-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner-title-wrap{
+    position: absolute;
+    bottom: 5%;
+    padding: 20px;
+}
+.banner-title-wrap>.banner-title{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+   
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post-category{
+    width: 90px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: white;
+    font-weight: 700;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF4040;
+    z-index: 2;
+}
