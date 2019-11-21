@@ -51,11 +51,6 @@
     z-index: 2;
     transition: all 0.1s linear 0s;
 }
-.post-category:hover{
-    background-color: transparent;
-    color: #FF4040;
-    transition: all 0.1s linear 0s;
-}
 .info{
     text-align: center;
 }

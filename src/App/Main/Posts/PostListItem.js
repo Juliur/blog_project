@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './PostListItem.css';
 
 const PostListItem = ({
@@ -15,7 +16,7 @@ const PostListItem = ({
                 <img className="post-img" src={image} alt=""/>
             </div>
             <div className="post-body">
-                <button className="category post-category">{category}</button>
+                <p className="category post-category">{category}</p>
                 <h3 className="post-title">{title}</h3>
                 <div className="info">
                     <p className="author"><i className="fa fa-pencil" aria-hidden="true"></i>By {author}</p>
@@ -24,7 +25,7 @@ const PostListItem = ({
                 <p className="text-content">{text}</p>
             </div>
             <div className="post-footer">
-                <a className="read-more-link" href="#">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                <Link to="/article:id" className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
             </div>
         </div>
     )

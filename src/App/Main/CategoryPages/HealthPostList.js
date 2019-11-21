@@ -4,12 +4,12 @@ import './Banner.css';
 import PostListItem from '../Posts/PostListItem';
 import Aside from '../../Aside/Aside';
 
-const TechPostList = () => {
+const HealthPostList = () => {
     return(
         <div id="category-page">
             <div id="banner">
             {
-                posts.filter((item)=>item.category==="Tech")
+                posts.filter((item)=>item.category==="Health")
                      .sort((a,b)=>{
                     let dateA = new Date (a.date),
                         dateB = new Date (b.date)
@@ -39,7 +39,7 @@ const TechPostList = () => {
         		</div>
             <div id="posts-area">
             {
-                posts.filter((item)=>item.category==="Tech")
+                posts.filter((item)=>item.category==="Health")
                     .slice(1, posts.length)
                     .map(({
                         id,
@@ -49,7 +49,7 @@ const TechPostList = () => {
                         title,
                         author,
                         date,
-				})=>(
+				    })=>(
 					<div key={id}>
 						<PostListItem
 						image={image}
@@ -68,4 +68,4 @@ const TechPostList = () => {
     )
 }
 
-export default TechPostList
+export default HealthPostList
