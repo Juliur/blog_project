@@ -121,13 +121,13 @@ const posts = [
     },
     {
         id: 13,
-        title: "Why aren't we living longer?",
+        title: "Bubonic plague: Third case reported in China",
         category: "Health",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
         author: "Author",
         date: "2019.11.01",
         views: 16,
-        image: "images/eyes.jpg",
+        image: "images/flea-drawing.jpg",
     },
     {
         id: 14,
@@ -159,6 +159,17 @@ const posts = [
         views: 13,
         image: "images/fitness.jpg",
     },
+    {
+        id: 17,
+        title: "Google’s AI-powered Smart Compose feature is coming to Docs",
+        category: "Tech",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
+        author: "Author",
+        date: "2019.10.18",
+        views: 13,
+        image: "images/docs.jpg",
+    },
+    
 
 ]
 export default posts

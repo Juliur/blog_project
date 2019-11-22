@@ -17,7 +17,7 @@
 .banner-title-wrap{
     position: absolute;
     bottom: 5%;
-    top: 60%;
+    top: 55%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -47,6 +47,7 @@
     width: 90px;
     height: 35px;
     margin-top: 15px;
+    margin-bottom: 15px;
     color: white;
     font-weight: 700;
     border-radius: 3px;

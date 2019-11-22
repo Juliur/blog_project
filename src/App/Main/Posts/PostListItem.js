@@ -26,7 +26,7 @@ const PostListItem = ({
                 <p className="text-content">{text}</p>
             </div>
             <div className="post-footer">
-                <Link to={`/article/${title}`} className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
+                <Link to={`/article/${id}`} className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
             </div>
         </div>
     )

@@ -15,11 +15,11 @@ const Main = () =>{
             <Route path="/tech" component={TechPostList}/>
             <Route path="/travel" component={TravelPostList}/>
             <Route path="/health" component={HealthPostList}/>
-            <Route path="/article/:title" 
+            <Route path="/article/:id" 
                   render= {(props)=> <FullPostItem 
-																	title={props.match.params.title}
-																	
-																	/>}
+																				id={props.match.params.id}
+																								
+																		/>}
 						/>
         </main>    
     )
