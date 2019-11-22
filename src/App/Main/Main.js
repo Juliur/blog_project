@@ -5,7 +5,6 @@ import SciencePostList from './CategoryPages/SciencePostList';
 import TechPostList from './CategoryPages/TechPostList';
 import TravelPostList from './CategoryPages/TravelPostList';
 import HealthPostList from './CategoryPages/HealthPostList';
-import ArtPostList from './CategoryPages/ArtPostList';
 import FullPostItem from './CategoryPages/FullPostItem';
 
 const Main = () =>{
@@ -16,8 +15,12 @@ const Main = () =>{
             <Route path="/tech" component={TechPostList}/>
             <Route path="/travel" component={TravelPostList}/>
             <Route path="/health" component={HealthPostList}/>
-            <Route path="/art" component={ArtPostList}/>
-            <Route path="/article:id" component={FullPostItem}/>
+            <Route path="/article/:title" 
+                  render= {(props)=> <FullPostItem 
+																	title={props.match.params.title}
+																	
+																	/>}
+						/>
         </main>    
     )
 }

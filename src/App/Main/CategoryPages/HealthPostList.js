@@ -13,7 +13,7 @@ const HealthPostList = () => {
                      .sort((a,b)=>{
                     let dateA = new Date (a.date),
                         dateB = new Date (b.date)
-                        return dateA - dateB   
+                        return dateB - dateA   
                 })
                     .slice(0,1)
                     .map(({

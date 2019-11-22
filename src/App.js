@@ -14,7 +14,7 @@ function App() {
     <div id="grid">
       <Header/>
       <Main/>
-      {/* <Footer/> */}
+      <Footer/>
      </div>
   )
 }

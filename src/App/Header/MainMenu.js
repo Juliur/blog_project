@@ -10,7 +10,6 @@ const MainMenu = () =>{
             <Link to= "/tech" className="nav-item link-effect">Tech</Link>
             <Link to= "/travel" className="nav-item link-effect">Travel</Link>
             <Link to= "/health" className="nav-item link-effect">Health</Link>
-            <Link to= "/art" className="nav-item link-effect">Art</Link>
         </div>
     )
 }

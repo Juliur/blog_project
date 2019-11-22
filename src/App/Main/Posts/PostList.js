@@ -3,7 +3,7 @@ import PostListItem from './PostListItem';
 import posts from './posts';
 
 const PostList = () =>{
-	let visiblePosts = 5;
+	let visiblePosts = 8;
     return(
         <div id="posts-area">
             {
@@ -18,6 +18,7 @@ const PostList = () =>{
 				})=> (
 					<div key={id}>
 						<PostListItem
+						id={id}
 						image={image}
 						category={category}
 						title={title}

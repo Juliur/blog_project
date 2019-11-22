@@ -41,16 +41,6 @@ const posts = [
     },
     {
         id:5,
-        title: "The most important part of Versailles",
-        category: "Art",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
-        author: "Author",
-        views: 10,
-        date: "2019.08.18",
-        image: "images/Versal.jpg",
-    },
-    {
-        id:6,
         title: "Boston Dynamics boss learned by unbalancing toddler",
         category: "Tech",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -60,7 +50,7 @@ const posts = [
         image: "images/spot.jpg",
     },
     {
-        id:7,
+        id:6,
         title: "These are the world’s best stargazing spots",
         category: "Travel",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -70,7 +60,7 @@ const posts = [
         image: "images/stars.jpg",
     },
     {
-        id:8,
+        id:7,
         title: "A local's guide to Vancouver",
         category: "Travel",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -80,7 +70,7 @@ const posts = [
         image: "images/vancouver.jpg",
     },
     {
-        id:9,
+        id:8,
         title: "Daylight Saving Time: ‘Falling Back’ Can Increase Seasonal Depression",
         category: "Health",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -90,7 +80,7 @@ const posts = [
         image: "images/depression.jpg",
     },
     {
-        id:10,
+        id:9,
         title: "How life blossomed after the dinosaurs died",
         category: "Science",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -100,7 +90,7 @@ const posts = [
         image: "images/dino.jpg",
     },
     {
-        id:11,
+        id:10,
         title: "Is this the world's scariest island",
         category: "Science",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -110,7 +100,7 @@ const posts = [
         image: "images/volcano.jpg",
     },
     {
-        id: 12,
+        id: 11,
         title: "SpaceX has unveiled the rocket it hopes will one day carry humans to Mars",
         category: "Science",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -120,7 +110,7 @@ const posts = [
         image: "/images/spacex.jpg",
     },
     {
-        id: 13,
+        id: 12,
         title: "What’s it like to live in an over-touristed city?",
         category: "Travel",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -130,17 +120,7 @@ const posts = [
         image: "/images/Prague.jpg",
     },
     {
-        id: 14,
-        title: "What will art look like in 20 years",
-        category: "Art",
-        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
-        author: "Author",
-        date: "2019.10.02",
-        views: 28,
-        image: "images/p076x7tm.jpg",
-    },
-    {
-        id: 15,
+        id: 13,
         title: "Why aren't we living longer?",
         category: "Health",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -150,7 +130,7 @@ const posts = [
         image: "images/eyes.jpg",
     },
     {
-        id: 16,
+        id: 14,
         title: "Facebook removes hundreds of 'inauthentic accounts'",
         category: "Tech",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
@@ -158,6 +138,26 @@ const posts = [
         date: "2019.10.10",
         views: 13,
         image: "images/fb.jpg",
+    },
+    {
+        id: 15,
+        title: "Drug-resistant superbug kills someone every 15 minutes",
+        category: "Health",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
+        author: "Author",
+        date: "2019.09.22",
+        views: 13,
+        image: "images/superbug.jpg",
+    },
+    {
+        id: 16,
+        title: "Exercising before breakfast burns more fat, study says",
+        category: "Health",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
+        author: "Author",
+        date: "2019.10.21",
+        views: 13,
+        image: "images/fitness.jpg",
     },
 
 ]
