@@ -1,5 +1,6 @@
 import React from 'react';
 import posts from '../Main/Posts/posts';
+import {Link} from 'react-router-dom';
 
 
 const RandomPost = () =>{
@@ -7,7 +8,9 @@ const RandomPost = () =>{
     return(
         <div className="random-post-wrap">
             {
-              [posts[randomId]].map(({image,
+              [posts[randomId]].map(({
+									id,
+									image,
 									title,
 									category,
 									author,
@@ -25,7 +28,7 @@ const RandomPost = () =>{
 												</div>
 										</div>
 										<div className="post-footer">
-												<a className="read-more-link" href="#">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										<Link to={`/article/${id}`} className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
 										</div>
 								</div>
               ) 

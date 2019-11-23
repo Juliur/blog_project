@@ -1,8 +1,12 @@
 .popular-posts{
     background-color: #F8F8F8;
 }
+.popular-post-wrapper{
+    text-decoration-line: none;
+}
 .popular-post-wrapper:hover h5{
     color: #FF4040;
+    
 }
 .appearing-link{
     font-size: 15px;

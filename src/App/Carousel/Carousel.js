@@ -58,6 +58,7 @@ class Carousel extends Component {
                             date
                         })=> <CarouselPostItem
                                 key={id}
+                                id={id}
                                 title={title}
                                 category={category}
                                 image={image}

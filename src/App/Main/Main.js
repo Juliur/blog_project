@@ -5,7 +5,7 @@ import SciencePostList from './CategoryPages/SciencePostList';
 import TechPostList from './CategoryPages/TechPostList';
 import TravelPostList from './CategoryPages/TravelPostList';
 import HealthPostList from './CategoryPages/HealthPostList';
-import FullPostItem from './CategoryPages/FullPostItem';
+import FullPostPage from './CategoryPages/FullPostPage';
 
 const Main = () =>{
     return(
@@ -16,11 +16,11 @@ const Main = () =>{
             <Route path="/travel" component={TravelPostList}/>
             <Route path="/health" component={HealthPostList}/>
             <Route path="/article/:id" 
-                  render= {(props)=> <FullPostItem 
-																				id={props.match.params.id}
-																								
-																		/>}
-						/>
+                  render= {(props)=> <FullPostPage
+									    id={props.match.params.id}										
+                                    />}
+                                   
+			/>
         </main>    
     )
 }

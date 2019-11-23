@@ -1,27 +1,30 @@
 import React from 'react';
 import FullPostItem from './FullPostItem';
+import './FullPostPage.css'
 import posts from '../Posts/posts';
 
-const FullPostPage = () => {
+const FullPostPage = ({
+    id,
+  }) => {
     return (
         <div>
-            {
-                posts.map(({
-                        id,
+            { 
+                posts.filter(post=>post.id == id)
+                    .map(({
+                        image,
                         category,
                         title,
-                        date,
+                        text,
                         author,
-                        image,
-                    })=> <div key={id}>
+                        date,
+                    }) => <div className="full-post" key={id}>
                             <FullPostItem
-                            id={id}
-                            image={image}
-                            category={category}
-                            title={title}
-                            text={text}
-                            author={author}
-                            date={date}
+                                image={image}
+                                category={category}
+                                title={title}
+                                text={text}
+                                author={author}
+                                date={date}
                         />
                     </div>
                 )

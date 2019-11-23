@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import posts from '../Posts/posts';
 import './Banner.css';
 import PostListItem from '../Posts/PostListItem';
@@ -28,7 +29,7 @@ const HealthPostList = () => {
                                 <div className="post-category">
                                     <p>{category}</p>
                                 </div>
-                                <h1 className="banner-title"><a href="">{title}</a></h1>
+                                <h1 className="banner-title"><Link to={`/article/${id}`}>{title}</Link></h1>
                                  <p>{date}</p>
                                  <p>By {author}</p>
                                 </div>
@@ -52,6 +53,7 @@ const HealthPostList = () => {
 				    })=>(
 					<div key={id}>
 						<PostListItem
+                        id={id}
 						image={image}
 						category={category}
 						title={title}

@@ -7,7 +7,7 @@ const posts = [
         author: "Author",
         date: "2019.06.10",
         views: 12,
-        image: "images/universe.jpg",
+        image: "/images/universe.jpg",
     },
     {
         id:2,
@@ -17,7 +17,7 @@ const posts = [
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
         views: 45,
         date: "2019.08.10",
-        image: "images/canadian.jpg",
+        image: "/images/canadian.jpg",
     },
     {
         id:3,
@@ -27,7 +27,7 @@ const posts = [
         author: "Author",
         date: "2019.09.18",
         views: 13,
-        image: "images/vr.jpg",
+        image: "/images/vr.jpg",
     },
     {
         id:4,
@@ -37,7 +37,7 @@ const posts = [
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi magnam eum id reprehe quisquam debitis assumenda eos minima, itaque consequatur voluptates, nihil quos repudiandae? Qnecessitatibus perspiciatis consequatur veniam!",
         date: "2019.10.10",
         views: 67,
-        image: "images/city.jpg",
+        image: "/images/city.jpg",
     },
     {
         id:5,
@@ -47,7 +47,7 @@ const posts = [
         author: "Author",
         views: 12,
         date: "2019.11.07",
-        image: "images/spot.jpg",
+        image: "/images/spot.jpg",
     },
     {
         id:6,
@@ -57,7 +57,7 @@ const posts = [
         author: "Author",
         views: 29,
         date: "2019.11.08",
-        image: "images/stars.jpg",
+        image: "/images/stars.jpg",
     },
     {
         id:7,
@@ -67,7 +67,7 @@ const posts = [
         author: "Author",
         views: 34,
         date: "2019.11.09",
-        image: "images/vancouver.jpg",
+        image: "/images/vancouver.jpg",
     },
     {
         id:8,
@@ -77,7 +77,7 @@ const posts = [
         author: "Author",
         date: "2019.11.09",
         views: 18,
-        image: "images/depression.jpg",
+        image: "/images/depression.jpg",
     },
     {
         id:9,
@@ -87,7 +87,7 @@ const posts = [
         author: "Author",
         date: "2019.07.10",
         views: 35,
-        image: "images/dino.jpg",
+        image: "/images/dino.jpg",
     },
     {
         id:10,
@@ -97,7 +97,7 @@ const posts = [
         author: "Author",
         date: "2019.10.19",
         views: 35,
-        image: "images/volcano.jpg",
+        image: "/images/volcano.jpg",
     },
     {
         id: 11,
@@ -127,7 +127,7 @@ const posts = [
         author: "Author",
         date: "2019.11.01",
         views: 16,
-        image: "images/flea-drawing.jpg",
+        image: "/images/flea-drawing.jpg",
     },
     {
         id: 14,
@@ -137,7 +137,7 @@ const posts = [
         author: "Author",
         date: "2019.10.10",
         views: 13,
-        image: "images/fb.jpg",
+        image: "/images/fb.jpg",
     },
     {
         id: 15,
@@ -147,7 +147,7 @@ const posts = [
         author: "Author",
         date: "2019.09.22",
         views: 13,
-        image: "images/superbug.jpg",
+        image: "/images/superbug.jpg",
     },
     {
         id: 16,
@@ -157,7 +157,7 @@ const posts = [
         author: "Author",
         date: "2019.10.21",
         views: 13,
-        image: "images/fitness.jpg",
+        image: "/images/fitness.jpg",
     },
     {
         id: 17,
@@ -167,7 +167,7 @@ const posts = [
         author: "Author",
         date: "2019.10.18",
         views: 13,
-        image: "images/docs.jpg",
+        image: "/images/docs.jpg",
     },
     
 

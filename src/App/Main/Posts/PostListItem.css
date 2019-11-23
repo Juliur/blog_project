@@ -17,6 +17,37 @@
     height: 100%;
     object-fit: cover; 
 }
+.text-box {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.text-box:before {
+    content: "";
+    float: left;
+    width: 5px;
+    height: 160px;
+}
+
+.text-box > *:first-child {
+    float: right;
+    width: 100%;
+    margin-left: -5px;
+}		
+
+.text-box:after {
+    content: "\02026";
+    box-sizing: content-box;
+    float: right;
+    position: relative;
+    top: -25px;
+    left: 100%; 
+    width: 3em;
+    margin-left: -3em;
+    padding-right: 5px;
+}
 .text-content{
     margin: 10px 20px;
     font-size: 1.1rem;
@@ -70,7 +101,7 @@
     color: #404250;
 }
 .post-footer{
-    padding: 0 0 15px 15px;
+    padding: 15px 0 15px 15px;
     text-align: end;
 }
 .read-more-link{

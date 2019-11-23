@@ -13,6 +13,7 @@ const PopularPostLIst = () =>{
                     views,
                 })=> <PopularPostItem 
                       key={id}
+                      id= {id}
                       image={image}
                       title={title}
                       views={views}
