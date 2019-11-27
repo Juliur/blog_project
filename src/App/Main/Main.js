@@ -5,7 +5,7 @@ import SciencePostList from './CategoryPages/SciencePostList';
 import TechPostList from './CategoryPages/TechPostList';
 import TravelPostList from './CategoryPages/TravelPostList';
 import HealthPostList from './CategoryPages/HealthPostList';
-import FullPostPage from './CategoryPages/FullPostPage';
+import FullPostPage from '../../Components/FullPostPage';
 
 const Main = () =>{
     return(

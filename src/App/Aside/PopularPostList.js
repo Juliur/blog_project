@@ -2,7 +2,7 @@ import React from 'react';
 import posts from '../Main/Posts/posts';
 import PopularPostItem from './PopularPostItem';
 
-const PopularPostLIst = () =>{
+const PopularPostList = () =>{
     return(
         <div>
             {
@@ -24,4 +24,4 @@ const PopularPostLIst = () =>{
     )
 }
 
-export default PopularPostLIst
+export default PopularPostList

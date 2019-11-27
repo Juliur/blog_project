@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import posts from '../Posts/posts';
-import './Banner.css';
-import PostListItem from '../Posts/PostListItem';
+import PostListItem from '../../../Components/PostListItem';
 import Aside from '../../Aside/Aside';
+import Banner from '../../../Components/Banner';
 
 const TravelPostList = () => {
     return(
@@ -24,17 +23,14 @@ const TravelPostList = () => {
                         date,
                         author,
                         image,
-                    })=> <div key={id} className="banner-wrap">
-                             <div className="banner-title-wrap">
-                                <div className="post-category">
-                                    <p>{category}</p>
-                                </div>
-                                <h1 className="banner-title"><Link to={`/article/${id}`}>{title}</Link></h1>
-                                 <p>{date}</p>
-                                 <p>By {author}</p>
-                                </div>
-                            <img className="banner-img" src={image} alt=""/>
-                         </div>      
+                    })=> <Banner
+                            id={id}
+                            image={image}
+                            category={category}
+                            title={title}
+                            author={author}
+                            date={date}
+                        />      
                     )
                  }
         		</div>

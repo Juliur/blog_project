@@ -1,6 +1,6 @@
 import React from 'react';
 import PostListItem from './PostListItem';
-import posts from './posts';
+import posts from '../App/Main/Posts/posts';
 
 const PostList = () =>{
 	let visiblePosts = 8;
@@ -11,7 +11,7 @@ const PostList = () =>{
 					id,
 					image,
 					category,
-					text,
+					short_description,
 					title,
 					author,
 					date,
@@ -22,7 +22,7 @@ const PostList = () =>{
 						image={image}
 						category={category}
 						title={title}
-						text={text}
+						short_description={short_description}
 						author={author}
 						date={date}
 						/>

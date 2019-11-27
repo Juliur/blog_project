@@ -7,7 +7,7 @@ const PostListItem = ({
     image,
     category,
     title,
-    text,
+    short_description,
     author,
     date,
 }) =>{
@@ -25,7 +25,7 @@ const PostListItem = ({
                 </div>
                 <div className="text-box">
                     <div>
-                        <p className="text-content">{text}</p>
+                        <p className="text-content">{short_description}</p>
                     </div>
                 </div>
             </div>

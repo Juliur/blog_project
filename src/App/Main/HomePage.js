@@ -1,5 +1,5 @@
 import React from 'react';
-import PostList from './Posts/PostList';
+import PostList from '../../Components/PostList';
 import Carousel from '../Carousel/Carousel';
 import Aside from '../Aside/Aside';
 
