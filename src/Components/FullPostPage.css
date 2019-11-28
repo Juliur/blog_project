@@ -37,6 +37,30 @@
     font-weight: 700;
 }
 .content-img{
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+.content-img-simple{
+    width: 70%;
+    margin-left: 20px;
+}
+.content-img-wide{
+    width: 100%;
+}
+.content-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    margin-left: 20px;
+}
+.img-wrap{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 350px;
+}
+.full-post .text-content{
+    margin: 0;
+}
+.text-content>p{
+    margin: 10px 20px;
 }

@@ -9,25 +9,25 @@ const FullPostPage = ({
     return (
         <div>
             { 
-							posts.filter(post=>post.id == id)
-									 .map(({
-											image,
-											category,
-											title,
-											content,
-											author,
-											date,
+				posts.filter(post=>post.id == id)
+					.map(({
+						image,
+						category,
+						title,
+						content,
+						author,
+						date,
                     }) => <div className="full-post" key={id}>
                             <FullPostItem
-															image={image}
-															category={category}
-															title={title}
-															content={content}
-															author={author}
-															date={date}
-                            />
-                    			</div>
-                			)
+								image={image}
+								category={category}
+								title={title}
+								content={content}
+								author={author}
+								date={date}
+							/>
+                    		</div>
+                	)
             }
       </div>
     )
