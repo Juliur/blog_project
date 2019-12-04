@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {includes} from 'lodash';
 import {connect} from 'react-redux';
 import './PostListItem.css';
 
@@ -42,7 +43,7 @@ const PostListItem = ({
 }
 
 const mapStateToProps = (state,props) => ({
-    isLiked: state.postsLikeState[props.id]
+    isLiked: includes(state.postsLikeState, props.id)
 })
 
 const MapDispatchToProps = (dispatch) => ({

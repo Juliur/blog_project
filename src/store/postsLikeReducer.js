@@ -7,10 +7,8 @@ const postsLikeReducer = (state = [], action) => {
                 action.id 
             ]
         case "DISLIKE":
-            return[
-                ...state,
-                action.id
-            ]
+
+            return state.filter(id => id !== action.id)
         default:
             return state             
         }
