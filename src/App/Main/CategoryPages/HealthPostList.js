@@ -24,7 +24,7 @@ const HealthPostList = () => {
                         author,
                         image,
                     })=> <Banner
-                            id={id}
+                            key={id}
                             image={image}
                             category={category}
                             title={title}

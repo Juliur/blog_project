@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 import './PostListItem.css';
 
 const PostListItem = ({
@@ -10,6 +11,9 @@ const PostListItem = ({
     short_description,
     author,
     date,
+    isLiked,
+    removeLike,
+    addLike,
 }) =>{
     return(
         <div className="post-item">
@@ -30,10 +34,29 @@ const PostListItem = ({
                 </div>
             </div>
             <div className="post-footer">
+                <button onClick={()=>{(isLiked) ? removeLike(id): addLike(id)}}> {isLiked ? <span className="fa fa-heart" aria-hidden="true"></span> : <span className="fa fa-heart-o" aria-hidden="true"></span>} </button>
                 <Link to={`/article/${id}`} className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
             </div>
         </div>
     )
 }
 
-export default PostListItem
+const mapStateToProps = (state,props) => ({
+    isLiked: state.postsLikeState[props.id]
+})
+
+const MapDispatchToProps = (dispatch) => ({
+    addLike: (id)=> dispatch({
+        type: "LIKE",
+        id: id,
+    }),
+    removeLike: (id)=> dispatch({
+        type: "DISLIKE",
+        id: id,
+    }),
+})
+
+export default connect(
+    mapStateToProps,
+    MapDispatchToProps,
+)(PostListItem)

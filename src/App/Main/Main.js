@@ -6,6 +6,7 @@ import TechPostList from './CategoryPages/TechPostList';
 import TravelPostList from './CategoryPages/TravelPostList';
 import HealthPostList from './CategoryPages/HealthPostList';
 import FullPostPage from '../../Components/FullPostPage';
+import FavouritedPostsPage from './FavouritedPosts/FavouritedPostsPage';
 
 const Main = () =>{
     return(
@@ -18,9 +19,10 @@ const Main = () =>{
             <Route path="/article/:id" 
                   render= {(props)=> <FullPostPage
 									    id={props.match.params.id}										
-                                    />}
-                                   
+                                    />}                  
 			/>
+            <Route path="/favourited" component={FavouritedPostsPage}/>
+        
         </main>    
     )
 }

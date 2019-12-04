@@ -186,7 +186,13 @@ const posts = [
         views: 13,
         image: "/images/docs.jpg",
     },
-    
-
 ]
+
+export const getPostsMap = (array) =>{
+    return array.reduce((map,post)=>({
+        ...map,
+        [post.id] : post,
+    }), {})
+}
+
 export default posts

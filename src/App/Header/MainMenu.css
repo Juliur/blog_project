@@ -5,9 +5,7 @@
 }
 .main-menu {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    text-align: center;
+    grid-template-columns: repeat(6, 1fr);
 }
 #nav-search:checked~.search{
     display: inline-block;
@@ -18,6 +16,7 @@
     color: #404250;
     font-weight: 700;
     text-decoration: none;
+    font-size: 18px;
 }  
 .main-menu .current{
     color: #FF4040;

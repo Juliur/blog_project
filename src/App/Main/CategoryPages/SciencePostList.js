@@ -42,7 +42,7 @@ const SciencePostList = () => {
                       id,
                       image,
                       category,
-                      text,
+                      short_description,
                       title,
                       author,
                       date,
@@ -53,7 +53,7 @@ const SciencePostList = () => {
                         image={image}
                         category={category}
                         title={title}
-                        text={text}
+                        short_description={short_description}
                         author={author}
                         date={date}
 								      />

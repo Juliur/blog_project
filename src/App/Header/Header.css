@@ -15,28 +15,10 @@ nav {
     display: grid;
     align-items: center;
 }
-.nav-item{
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-.main-menu {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    text-align: center;
-}
 #nav-search:checked~.search{
     display: inline-block;
     position: absolute;
 }
-.main-menu>a{
-    height: 100%;
-    color: #404250;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 18px;
-} 
 #nav-toggle, .burger-menu {
     display: none;
 } 
