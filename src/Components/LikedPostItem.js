@@ -1,14 +1,15 @@
 import React from 'react';
 import SmallPost from './SmallPost';
 
-const FavouritePostItem = ({
+const LikedPostItem = ({
     post,
 }) => {
     return (
         <div>
             <SmallPost
-                title={post.title}
                 id={post.id}
+                key={post.id}
+                title={post.title}
                 image={post.image}
                 date={post.date}
                 author={post.author}
@@ -18,4 +19,4 @@ const FavouritePostItem = ({
     )
 }
 
-export default FavouritePostItem
+export default LikedPostItem

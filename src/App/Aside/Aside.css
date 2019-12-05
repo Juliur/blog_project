@@ -92,5 +92,9 @@
 }
 .random-post-wrap .post-footer{
     padding-top: 15px;
-    text-align: center;
+   justify-content: center;
+    
+}
+.random-post-wrap .post-footer .read-more-link{
+    grid-column: span 2;
 }

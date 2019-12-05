@@ -1,15 +1,15 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import FavouritePostList from '../../../Components/FavouritePostsList';
-import './FavouritedPostsPage.css';
+import LikedPostList from '../../../Components/LikedPostsList';
+import './LikedPostsPage.css';
 
 const FavouritedPostsPage = ({
     postsLikeState
 }) => {
     return(
-        <div className="fav-post-deck">
-            <h2 className="page-title">Favourited Posts</h2>
-            <FavouritePostList
+        <div className="fav-post-page">
+            <h2 className="page-title">Liked Posts</h2>
+            <LikedPostList
                 postsLikeState={postsLikeState}
             />
         </div>

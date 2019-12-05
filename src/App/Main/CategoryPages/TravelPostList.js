@@ -24,6 +24,7 @@ const TravelPostList = () => {
                         author,
                         image,
                     })=> <Banner
+                            key={id}
                             id={id}
                             image={image}
                             category={category}

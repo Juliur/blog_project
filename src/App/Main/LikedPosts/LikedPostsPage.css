@@ -7,8 +7,14 @@
     margin-top: 30px;
 }
 
-.fav-post-deck .post-item{
-   width: 600px;
+.fav-post-page .post-item{
+   width: 800px;
    margin: 0 auto;
    margin-top: 30px;
+   grid-template-rows: 250px auto auto;
+
+}
+.fav-post-page .post-item .post-footer{
+    justify-content: flex-end;
+    padding: 15px;
 }

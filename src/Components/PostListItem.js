@@ -28,14 +28,10 @@ const PostListItem = ({
                     <p className="author"><i className="fa fa-pencil" aria-hidden="true"></i>By {author}</p>
                     <p className="publication-date"><i className="fa fa-calendar" aria-hidden="true"></i>{date}</p>
                 </div>
-                <div className="text-box">
-                    <div>
-                        <p className="text-content">{short_description}</p>
-                    </div>
-                </div>
+                    <p className="text-content">{short_description}</p>
             </div>
             <div className="post-footer">
-                <button onClick={()=>{(isLiked) ? removeLike(id): addLike(id)}}> {isLiked ? <span className="fa fa-heart" aria-hidden="true"></span> : <span className="fa fa-heart-o" aria-hidden="true"></span>} </button>
+                <button className="like-btn" onClick={()=>{(isLiked) ? removeLike(id): addLike(id)}}> {isLiked ? <span className="fa fa-heart" aria-hidden="true"></span> : <span className="fa fa-heart-o" aria-hidden="true"></span>} </button>
                 <Link to={`/article/${id}`} className="read-more-link">Read more <i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
             </div>
         </div>

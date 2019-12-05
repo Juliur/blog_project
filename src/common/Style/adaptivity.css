@@ -9,21 +9,36 @@
     .popular-post{
         grid-template-rows: 150px;
     }
+    #carousel .category-title .slider-title{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    #carousel .category-title .slide-category{
+        width: 120px;
+        height: 40px;
+    }
+    #carousel .category-title .category{
+        font-size: 22px;
+    }
 } 
 @media (max-width: 1200px){
     .container{
         width: 80%;
         position: relative;
     }
+    #main .full-post{
+        grid-template-areas: 
+        "post";
+        grid-template-columns: 100%;
+    }
 }
 @media (max-width: 991px) {
     #grid {
         grid-template-areas:
             "header header"
-            "carousel carousel"
-            "main sidebar"
+            "main main"
             "footer footer";
-        grid-template-rows: 60px 300px auto auto auto;
+        grid-template-rows: 60px auto auto;
         grid-template-columns: 60% 40%; 
         height: 100%;
         width: 100%;
@@ -44,7 +59,7 @@
         position: absolute;
         top: 50%;                         
         transform: translate(0, -50%);
-        right: 15px;
+        right: 30px;
     }
     nav .logo{
         margin-left: 15px;
@@ -106,11 +121,9 @@
     #grid {
     grid-template-areas:
         "header"
-        "carousel"
         "main"
-        "sidebar"
         "footer";
-    grid-template-rows: 60px 320px auto auto auto;
+    grid-template-rows: 60px auto auto;
     grid-template-columns: 100%; 
     height: 100%;
     }
@@ -131,21 +144,19 @@
     width: 100%;
     position: relative;
     }
-    #main{
+    #home-page{
+        grid-template-areas:
+        "carousel carousel" 
+        "posts-area  posts-area"
+        "sidebar sidebar";
+        grid-template-columns: 1fr;
+        grid-template-rows: 60vh auto;
+    }
+    #home-page #posts-area{
+        padding-right: 0;
+    }
+    .post-item .post-footer{
         padding: 15px;
-    }
-    .post{
-        margin-top: 0;
-        border-bottom: 0;
-    }
-    .post-body> p{
-        text-align: justify;
-        margin: 10px 0;
-    }
-    .post-footer{
-        padding: 0;
-        margin-bottom: 15px;
-        margin-top: 15px;
     }
     #sidebar{
         padding-top: 0;

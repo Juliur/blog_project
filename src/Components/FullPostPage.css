@@ -1,8 +1,7 @@
 .full-post{
     display: grid;
     grid-template-areas: 
-    ". post ."
-    ". popular-posts .";
+    ". post .";
     grid-template-columns: 1fr 1200px 1fr;
 }
 
@@ -63,4 +62,8 @@
 }
 .text-content>p{
     margin: 10px 20px;
+}
+
+.full-post .post-footer{
+    padding: 15px;
 }

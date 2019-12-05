@@ -1,9 +1,9 @@
 import React from 'react';
 import posts, {getPostsMap} from '../App/Main/Posts/posts';
-import FavouritePostItem from './FavouritePostItem';
+import LikedPostItem from './LikedPostItem';
 import {connect} from 'react-redux';
 
-const FavouritePostsList = ({
+const LikedPostsList = ({
     postsMap = getPostsMap(posts),
     postsLikeState,
 }) => {
@@ -11,7 +11,7 @@ const FavouritePostsList = ({
         <div>
             {
                postsLikeState.map((id)=>
-                    <FavouritePostItem
+                    <LikedPostItem
                     post={postsMap[id]}
                     key={id}
                     />
@@ -26,4 +26,4 @@ const mapStateToProps = (state) => {
         postsLikeState: state.postsLikeState
   }}
 
-export default connect(mapStateToProps)(FavouritePostsList) 
+export default connect(mapStateToProps)(LikedPostsList) 

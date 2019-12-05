@@ -9,7 +9,6 @@ const RandomPost = () =>{
         <div className="random-post-wrap">
             {
               [posts[randomId]].map(({
-									id,
 									image,
 									title,
 									category,
@@ -17,6 +16,7 @@ const RandomPost = () =>{
 									date,
                     			})=> <SmallPost
 										key={randomId}
+										id={randomId}
 										image={image}
 										title={title}
 										category={category}

@@ -17,8 +17,10 @@ const FullPostPage = ({
 						content,
 						author,
 						date,
+						id,
                     }) => <div className="full-post" key={id}>
                             <FullPostItem
+								id={id}
 								image={image}
 								category={category}
 								title={title}

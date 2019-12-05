@@ -24,6 +24,7 @@ const SciencePostList = () => {
                         author,
                         image,
                     })=> <Banner
+                            key={id}
                             id={id}
                             image={image}
                             category={category}
