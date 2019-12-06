@@ -2,7 +2,7 @@
   "name": "blog-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juliur.github.io/blog_project/",
+  "homepage": "https://github.com/Juliur/blog_project.git",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.10.27",
     "core-js": "^3.3.3",
