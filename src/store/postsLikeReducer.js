@@ -2,9 +2,10 @@
 const postsLikeReducer = (state = [], action) => { 
     switch(action.type){
         case "LIKE": 
+            // debugger
             return [
                 ...state,
-                action.id 
+                action.id,
             ]
         case "DISLIKE":
 

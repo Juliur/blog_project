@@ -1,8 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './MainMenu.css'
+import {connect} from 'react-redux';
+import './MainMenu.css';
 
-const MainMenu = () =>{
+
+const MainMenu = ({value}) =>{
     return (
         <div className="main-menu">
             <Link to= "/" className="nav-item link-effect">Home</Link>
@@ -10,9 +12,17 @@ const MainMenu = () =>{
             <Link to= "/tech" className="nav-item link-effect">Tech</Link>
             <Link to= "/travel" className="nav-item link-effect">Travel</Link>
             <Link to= "/health" className="nav-item link-effect">Health</Link>
-            <Link to= "/liked" className="nav-item"><i className="fa fa-heart-o" aria-hidden="true"></i></Link>
+            <div className="like-counter">
+                <Link to= "/liked">
+                    <i className="fa fa-heart-o" aria-hidden="true"></i>
+                </Link>
+                <p>{value}</p>
+            </div>
         </div>
     )
 }
 
-export default MainMenu
+const mapStateToProps = function(state) {
+    return { value : state.postsLikeState.length || ''}
+}
+export default connect(mapStateToProps)(MainMenu)
