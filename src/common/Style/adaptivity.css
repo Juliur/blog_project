@@ -87,9 +87,13 @@
         top: 100%;
         right: 0;
     }
-    nav .main-menu a{
+    nav .main-menu .nav-item{
         padding: 15px;
         background-color: #F8F8F8;
+    }
+    .likes-counter{
+        text-align: end;
+        width: 100%;
     }
     .slider-item .category-title{
         top: 55%;
@@ -214,6 +218,12 @@
     .contacts-wrapper h2{
         text-align: center;
     }
-} 
+}
+
+
+
+
+
+ 
 
 

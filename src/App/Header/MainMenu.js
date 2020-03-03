@@ -14,13 +14,13 @@ const MainMenu = ({value}) =>{
             <Link to= "/health" className="nav-item link-effect">Health</Link>
             <div className="likes-counter">
                 <Link to= "/liked"><i className="fa fa-heart-o" aria-hidden="true"></i></Link>
-                <p className="counter">{value}</p>
+                <p className="counter">{(value>=1) ? value : "0"}</p>
             </div>
         </div>
     )
 }
 
 const mapStateToProps = function(state) {
-    return { value : state.postsLikeState.length || ''}
+    return { value : state.postsLikeState.length}
 }
 export default connect(mapStateToProps)(MainMenu)

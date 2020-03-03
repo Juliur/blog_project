@@ -1,7 +1,7 @@
 .nav-item{
     display: grid;
     align-items: center;
-    text-align: center;
+    text-align: end;
 }
 .main-menu {
     display: grid;
@@ -11,7 +11,7 @@
     display: inline-block;
     position: absolute;
 }
-.main-menu>a {
+.main-menu> .nav-item {
     height: 100%;
     color: #404250;
     font-weight: 700;
@@ -59,7 +59,9 @@
 
 .likes-counter{
     align-self: center;
-    justify-self: center;
+    justify-self: end;
+    padding: 15px;
+    background-color: #F8F8F8
 }
 .likes-counter a{
     color: #404250;
