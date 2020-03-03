@@ -12,11 +12,9 @@ const MainMenu = ({value}) =>{
             <Link to= "/tech" className="nav-item link-effect">Tech</Link>
             <Link to= "/travel" className="nav-item link-effect">Travel</Link>
             <Link to= "/health" className="nav-item link-effect">Health</Link>
-            <div className="like-counter">
-                <Link to= "/liked">
-                    <i className="fa fa-heart-o" aria-hidden="true"></i>
-                </Link>
-                <p>{value}</p>
+            <div className="likes-counter">
+                <Link to= "/liked"><i className="fa fa-heart-o" aria-hidden="true"></i></Link>
+                <p className="counter">{value}</p>
             </div>
         </div>
     )

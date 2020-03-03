@@ -56,3 +56,16 @@
 #nav-toggle, .burger-menu {
     display: none;
 } 
+
+.likes-counter{
+    align-self: center;
+    justify-self: center;
+}
+.likes-counter a{
+    color: #404250;
+    margin-right: 3px;
+}
+.likes-counter .counter{
+    display: inline-grid;
+    color: #404250;
+}
